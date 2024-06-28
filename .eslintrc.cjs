@@ -50,7 +50,7 @@ module.exports = {
     // https://github.com/prettier/eslint-plugin-prettier/blob/master/README.md#arrow-body-style-and-prefer-arrow-callback-issue
     'arrow-body-style': 'off',
     'prefer-arrow-callback': 'off',
-    // '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
   },
 
   overrides: [
