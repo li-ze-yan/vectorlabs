@@ -34,14 +34,24 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
-    // "prettier",
+    'prettier',
   ],
 
   // 该配置项指示要加载的插件，这里
   // @typescript-eslint 插件使得我们能够在我们的存储库中使用typescript-eslint包定义的规则集。
   // prettier插件（即eslint-plugin-prettier）将 Prettier 规则转换为 ESLint 规则
-  // "prettier"
-  plugins: ['@typescript-eslint'],
+  //
+  plugins: ['@typescript-eslint', 'prettier'],
+
+  rules: {
+    // 打开prettier插件提供的规则，该插件从 ESLint 内运行 Prettier
+    'prettier/prettier': 'error',
+    // 关闭这两个 ESLint 核心规则，这两个规则和prettier插件一起使用会出现问题，具体可参阅
+    // https://github.com/prettier/eslint-plugin-prettier/blob/master/README.md#arrow-body-style-and-prefer-arrow-callback-issue
+    'arrow-body-style': 'off',
+    'prefer-arrow-callback': 'off',
+    // '@typescript-eslint/no-explicit-any': 'off',
+  },
 
   overrides: [
     // React

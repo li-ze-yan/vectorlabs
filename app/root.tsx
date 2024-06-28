@@ -1,10 +1,7 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
 import './tailwind.css'
-import { useState } from 'react'
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  const [xx, setXx] = useState(0)
-
   return (
     <html lang="en">
       <head>
