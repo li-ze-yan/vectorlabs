@@ -9,6 +9,8 @@ module.exports = {
       'always',
       ['feat', 'fix', 'docs', 'style', 'refactor', 'test', 'chore', 'revert', 'ci', 'perf', 'build', 'init'],
     ],
+    // 允许空的scope
+    'scope-empty': [2, 'always'],
     'subject-full-stop': [0, 'never'],
     'subject-empty': [2, 'never'],
     'subject-case': [0, 'never'],
