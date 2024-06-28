@@ -1,1 +1,4 @@
-node_modules / pnpm - lock.yaml
+node_modules
+build
+dist
+pnpm - lock.yaml
