@@ -13,6 +13,14 @@
     "format": "prettier --cache --ignore-path .eslintignore --write ./",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --config .eslintrc.cjs"
+    ],
+    "*.{ts,tsx,js,jsx,json,html,yml,css,md}": [
+      "prettier --write"
+    ]
+  },
   "dependencies": {
     "@remix-run/node": "^2.10.0",
     "@remix-run/react": "^2.10.0",
@@ -37,6 +45,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
     "postcss": "^8.4.38",
     "prettier": "^3.3.2",
     "tailwindcss": "^3.4.4",
