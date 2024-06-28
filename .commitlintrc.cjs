@@ -1,6 +1,7 @@
 module.exports = {
   // 采用cz自定义的提交规范
   extends: ['cz'],
+  scopes: [],
   rules: {
     'type-empty': [2, 'never'],
     'type-enum': [
