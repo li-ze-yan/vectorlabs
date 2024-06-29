@@ -1,41 +1,41 @@
 {
-  // See https://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
-  // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+	// See https://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+	// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
 
-  // List of extensions which should be recommended for users of this workspace.
-  "recommendations": [
-    "bradlc.vscode-tailwindcss",
-    "brandonfowler.exe-runner",
-    "christian-kohler.path-intellisense",
-    "codezombiech.gitignore",
-    "csstools.postcss",
-    "dbaeumer.vscode-eslint",
-    "eamodio.gitlens",
-    "EditorConfig.EditorConfig",
-    "esbenp.prettier-vscode",
-    "formulahendry.auto-close-tag",
-    "formulahendry.auto-complete-tag",
-    "formulahendry.auto-rename-tag",
-    "k--kato.intellij-idea-keybindings",
-    "mikestead.dotenv",
-    "ms-azuretools.vscode-docker",
-    "MS-CEINTL.vscode-language-pack-zh-hans",
-    "ms-python.isort",
-    "ms-python.python",
-    "ms-python.vscode-pylance",
-    "pflannery.vscode-versionlens",
-    "pranaygp.vscode-css-peek",
-    "ritwickdey.LiveServer",
-    "sissel.shopify-liquid",
-    "stylelint.vscode-stylelint",
-    "tomoki1207.pdf",
-    "vscode-icons-team.vscode-icons",
-    "Vue.volar",
-    "Vue.vscode-typescript-vue-plugin",
-    "wayou.vscode-todo-highlight",
-    "wix.vscode-import-cost",
-    "yzhang.markdown-all-in-one"
-  ],
-  // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
-  "unwantedRecommendations": []
+	// List of extensions which should be recommended for users of this workspace.
+	"recommendations": [
+		"bradlc.vscode-tailwindcss",
+		"brandonfowler.exe-runner",
+		"christian-kohler.path-intellisense",
+		"codezombiech.gitignore",
+		"csstools.postcss",
+		"dbaeumer.vscode-eslint",
+		"eamodio.gitlens",
+		"EditorConfig.EditorConfig",
+		"esbenp.prettier-vscode",
+		"formulahendry.auto-close-tag",
+		"formulahendry.auto-complete-tag",
+		"formulahendry.auto-rename-tag",
+		"k--kato.intellij-idea-keybindings",
+		"mikestead.dotenv",
+		"ms-azuretools.vscode-docker",
+		"MS-CEINTL.vscode-language-pack-zh-hans",
+		"ms-python.isort",
+		"ms-python.python",
+		"ms-python.vscode-pylance",
+		"pflannery.vscode-versionlens",
+		"pranaygp.vscode-css-peek",
+		"ritwickdey.LiveServer",
+		"sissel.shopify-liquid",
+		"stylelint.vscode-stylelint",
+		"tomoki1207.pdf",
+		"vscode-icons-team.vscode-icons",
+		"Vue.volar",
+		"Vue.vscode-typescript-vue-plugin",
+		"wayou.vscode-todo-highlight",
+		"wix.vscode-import-cost",
+		"yzhang.markdown-all-in-one"
+	],
+	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
+	"unwantedRecommendations": []
 }
