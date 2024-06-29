@@ -28,5 +28,5 @@
 		"package-lock.json": true,
 		"pnpm-lock.yaml": true
 	},
-	"cSpell.words": ["commitlint", "isbot", "stylelint", "tailwindcss", "typecheck", "vectorlabs"]
+	"cSpell.words": ["commitlint", "framermotion", "isbot", "stylelint", "tailwindcss", "typecheck", "vectorlabs"]
 }
