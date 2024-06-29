@@ -32,9 +32,18 @@ Please contribute using [GitHub Flow](https://docs.github.com/en/get-started/usi
 
 Technologies used in the project:
 
+- [vite](https://vitejs.dev/)
 - [remix.run](https://remix.run/)
+- [typescript](https://www.typescriptlang.org/)
 - [tailwindcss](https://tailwindcss.com/)
 - [framermotion](https://www.framer.com/motion/)
+- [storybook](https://storybook.js.org/)
+- [eslint](https://eslint.org/)
+- [stylelint](https://stylelint.io/)
+- [husky](https://typicode.github.io/husky/)
+- [lint-staged](https://github.com/lint-staged/lint-staged)
+- [commitlint](https://commitlint.js.org/)
+- [commitizen](https://commitizen-tools.github.io/commitizen/)
 
 <h2>🛡️ License:</h2>
 
