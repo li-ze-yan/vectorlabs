@@ -27,5 +27,6 @@
 		"yarn.lock": true,
 		"package-lock.json": true,
 		"pnpm-lock.yaml": true
-	}
+	},
+	"cSpell.words": ["commitlint", "isbot", "stylelint", "tailwindcss", "typecheck", "vectorlabs"]
 }
