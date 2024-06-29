@@ -1,40 +1,45 @@
-# Welcome to Remix!
+<h1 align="center" id="title">vectorlabs</h1>
 
-- 📖 [Remix docs](https://remix.run/docs)
+<p align="center"><img src="https://socialify.git.ci/li-ze-yan/vectorlabs/image?font=Inter&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Plus&amp;theme=Light" alt="project-image"></p>
 
-## Development
+<p id="description">This project records learning and achievements builds a standardized front-end process configuration to ensure unified coding in the later stage enhances coding experience and is also displayed on my personal official website</p>
 
-Run the dev server:
+<h2>🛠️ Installation Steps:</h2>
 
-```shellscript
-npm run dev
+<p>1. 1. Clone the repository</p>
+
+```
+git clone repo_url
 ```
 
-## Deployment
+<p>2. 2. Install npm modules</p>
 
-First, build your app for production:
-
-```sh
-npm run build
+```
+pnpm install
 ```
 
-Then run the app in production mode:
+<p>3. 3. Start development server using below command</p>
 
-```sh
-npm start
+```
+pnpm run dev
 ```
 
-Now you'll need to pick a host to deploy it to.
+<h2>🍰 Contribution Guidelines:</h2>
 
-### DIY
+Please contribute using [GitHub Flow](https://docs.github.com/en/get-started/using-github/github-flow). Create a branch add commits and open a pull request.
 
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+<h2>💻 Built with</h2>
 
-Make sure to deploy the output of `npm run build`
+Technologies used in the project:
 
-- `build/server`
-- `build/client`
+- [remix.run](https://remix.run/)
+- [tailwindcss](https://tailwindcss.com/)
+- [framermotion](https://www.framer.com/motion/)
 
-## Styling
+<h2>🛡️ License:</h2>
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+This project is licensed under the This project is licensed under the MIT License
+
+<h2>💖Like my work?</h2>
+
+This project needs a ⭐️ from you. Don't forget to leave a star ⭐️.
