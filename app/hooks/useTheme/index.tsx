@@ -1,4 +1,5 @@
 export const useTheme = () => {
-	// let initial = useRef(true)
+	// const { setting, setSetting } = useSettingStore()
+	// const initial = useRef(true)
 	return <div>useTheme</div>
 }
