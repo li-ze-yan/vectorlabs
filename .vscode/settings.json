@@ -31,12 +31,12 @@
 	"cSpell.words": [
 		"clsx",
 		"commitlint",
-		"Fira",
 		"framermotion",
 		"isbot",
 		"stylelint",
 		"tailwindcss",
 		"typecheck",
-		"vectorlabs"
+		"vectorlabs",
+		"zustand"
 	]
 }
