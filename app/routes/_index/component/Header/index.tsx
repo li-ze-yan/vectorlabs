@@ -1,3 +1,4 @@
+import { Link } from '@remix-run/react'
 import clsx from 'clsx'
 import { Logo } from '~/component'
 import { NavItems } from './component'
@@ -44,6 +45,81 @@ export const Header = () => {
 						</div>
 					</div>
 				</div>
+				<div className="relative max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32">
+					<h1 className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-7xl tracking-widest text-center dark:text-white">
+						快速构建现代网站
+						<p className="mt-2"></p>
+						创新驱动实践出真知
+					</h1>
+					<p className="mt-6 text-lg text-slate-600 text-center max-w-2xl mx-auto dark:text-slate-400">
+						这是用于 <code className="font-mono font-medium text-sky-500 dark:text-sky-400">Vector</code>{' '}
+						自我记录职业技能的平台，包含{' '}
+						<code className="font-mono font-medium text-sky-500 dark:text-sky-400">框架/语法/原理/工作</code>{' '}
+						等，你可以在网站查看你所需要的内容
+					</p>
+					<div className="mt-6 sm:mt-10 flex justify-center space-x-6 text-sm">
+						<Link
+							to=""
+							className="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400"
+						>
+							开始使用
+						</Link>
+						{/* <SearchButton className="hidden sm:flex items-center w-72 text-left space-x-3 px-4 h-12 bg-white ring-1 ring-slate-900/10 hover:ring-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 shadow-sm rounded-lg text-slate-400 dark:bg-slate-800 dark:ring-0 dark:text-slate-300 dark:highlight-white/5 dark:hover:bg-slate-700">
+              {({ actionKey }) => (
+                <>
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="flex-none text-slate-300 dark:text-slate-400"
+                    aria-hidden="true"
+                  >
+                    <path d="m19 19-3.5-3.5" />
+                    <circle cx="11" cy="11" r="6" />
+                  </svg>
+                  <span className="flex-auto">Quick search...</span>
+                  {actionKey && (
+                    <kbd className="font-sans font-semibold dark:text-slate-500">
+                      <abbr
+                        title={actionKey[1]}
+                        className="no-underline text-slate-300 dark:text-slate-500"
+                      >
+                        {actionKey[0]}
+                      </abbr>{' '}
+                      K
+                    </kbd>
+                  )}
+                </>
+              )}
+            </SearchButton> */}
+					</div>
+				</div>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
+				<p>1111111111111</p>
 			</div>
 		</header>
 	)
