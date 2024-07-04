@@ -33,6 +33,7 @@
 		"commitlint",
 		"framermotion",
 		"isbot",
+		"Parens",
 		"stylelint",
 		"tailwindcss",
 		"typecheck",

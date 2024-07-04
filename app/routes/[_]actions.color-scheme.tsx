@@ -1,15 +1,17 @@
-import { createCookie, redirect, type ActionFunctionArgs } from '@remix-run/node'
-
-const cookie = createCookie('color-scheme', {
-	maxAge: 34560000,
-	sameSite: 'lax',
-})
+import { type ActionFunctionArgs } from '@remix-run/node'
+import { serializeColorScheme, validateColorScheme } from '~/lib/color-scheme.server'
+import { safeRedirect } from '~/lib/http.server'
 
 export async function action({ request }: ActionFunctionArgs) {
 	const formData = await request.formData()
 	const colorScheme = formData.get('colorScheme')
-	console.log(formData.get('returnTo'))
-	return redirect(formData.get('returnTo') as string, {
-		headers: { 'Set-Cookie': cookie.serialize({ colorScheme }) } as any,
+	console.log('colorScheme', colorScheme)
+	console.log("formData.get('returnTo')", formData.get('returnTo'))
+	if (!validateColorScheme(colorScheme)) {
+		throw new Response('网站模式传递错误', { status: 400 })
+	}
+	// 重定向到之前的页面
+	return safeRedirect(formData.get('returnTo'), {
+		headers: { 'Set-Cookie': await serializeColorScheme(colorScheme) },
 	})
 }

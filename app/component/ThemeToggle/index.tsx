@@ -1,7 +1,6 @@
 import { Form, useLocation, useNavigation } from '@remix-run/react'
 import clsx from 'clsx'
 import { forwardRef, useEffect, useRef, useState } from 'react'
-// eslint-disable-next-line import/no-unresolved
 import iconsHref from '/img/common/icons.svg'
 
 export const ThemeToggle = () => {
@@ -26,13 +25,13 @@ export const ThemeToggle = () => {
 						</svg>{' '}
 						Light
 					</button>
-					<button value="moon" name="colorScheme">
+					<button value="dark" name="colorScheme">
 						<svg className="h-4 w-4">
 							<use href={`${iconsHref}#moon`} />
 						</svg>{' '}
 						Dark
 					</button>
-					<button value="monitor" name="colorScheme">
+					<button value="system" name="colorScheme">
 						<svg className="h-4 w-4">
 							<use href={`${iconsHref}#monitor`} />
 						</svg>{' '}

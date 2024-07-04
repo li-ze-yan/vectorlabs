@@ -14,6 +14,7 @@ const sharedRules = {
 	'prefer-arrow-callback': 'off',
 	'@typescript-eslint/no-explicit-any': 'off',
 	'jsx-a11y/no-noninteractive-element-interactions': 'off',
+	'import/no-unresolved': 'off',
 }
 
 /** @type {import('eslint').Linter.Config} */
