@@ -4,6 +4,19 @@
  * and should modify this configuration to best suit your team's needs.
  */
 
+// 定义共享的规则
+const sharedRules = {
+	// 打开prettier插件提供的规则，该插件从 ESLint 内运行 Prettier
+	'prettier/prettier': 'error',
+	// 关闭这两个 ESLint 核心规则，这两个规则和prettier插件一起使用会出现问题，具体可参阅
+	// https://github.com/prettier/eslint-plugin-prettier/blob/master/README.md#arrow-body-style-and-prefer-arrow-callback-issue
+	'arrow-body-style': 'off',
+	'prefer-arrow-callback': 'off',
+	'@typescript-eslint/no-explicit-any': 'off',
+	'jsx-a11y/no-noninteractive-element-interactions': 'off',
+	'import/no-unresolved': 'off',
+}
+
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
 	// 该配置项主要用于指示此.eslintrc文件是Eslint在项目内使用的根级别文件，并且 ESLint 不应在该目录之外搜索配置文件
@@ -44,16 +57,6 @@ module.exports = {
 	//
 	plugins: ['@typescript-eslint', 'prettier'],
 
-	rules: {
-		// 打开prettier插件提供的规则，该插件从 ESLint 内运行 Prettier
-		'prettier/prettier': 'error',
-		// 关闭这两个 ESLint 核心规则，这两个规则和prettier插件一起使用会出现问题，具体可参阅
-		// https://github.com/prettier/eslint-plugin-prettier/blob/master/README.md#arrow-body-style-and-prefer-arrow-callback-issue
-		'arrow-body-style': 'off',
-		'prefer-arrow-callback': 'off',
-		'@typescript-eslint/no-explicit-any': 'off',
-	},
-
 	overrides: [
 		// React
 		{
@@ -78,6 +81,7 @@ module.exports = {
 					typescript: {},
 				},
 			},
+			rules: sharedRules,
 		},
 
 		// Typescript
@@ -97,6 +101,7 @@ module.exports = {
 				},
 			},
 			extends: ['plugin:@typescript-eslint/recommended', 'plugin:import/recommended', 'plugin:import/typescript'],
+			rules: sharedRules,
 		},
 
 		// Node
@@ -107,4 +112,5 @@ module.exports = {
 			},
 		},
 	],
+	rules: sharedRules,
 }

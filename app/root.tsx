@@ -1,5 +1,5 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
-import './tailwind.css'
+import './css/tailwind.css'
 
 export function Layout({ children }: { children: React.ReactNode }) {
 	return (
@@ -10,7 +10,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<Meta />
 				<Links />
 			</head>
-			<body>
+			<body className="antialiased text-slate-500 dark:text-slate-400">
 				{children}
 				<ScrollRestoration />
 				<Scripts />
