@@ -1,6 +1,6 @@
 import { Link } from '@remix-run/react'
 import clsx from 'clsx'
-import { Logo } from '~/component'
+import { Logo, ThemeToggle } from '~/component'
 import { NavItems } from './component'
 import styles from './index.module.css'
 export const Header = () => {
@@ -31,7 +31,7 @@ export const Header = () => {
 								</ul>
 							</nav>
 							<div className="flex items-center border-l border-slate-200 ml-6 pl-6 dark:border-slate-800">
-								{/* <ThemeToggle /> */}
+								<ThemeToggle />
 								<a
 									href="https://github.com/li-ze-yan"
 									className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"

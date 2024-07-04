@@ -13,6 +13,7 @@ const sharedRules = {
 	'arrow-body-style': 'off',
 	'prefer-arrow-callback': 'off',
 	'@typescript-eslint/no-explicit-any': 'off',
+	'jsx-a11y/no-noninteractive-element-interactions': 'off',
 }
 
 /** @type {import('eslint').Linter.Config} */
