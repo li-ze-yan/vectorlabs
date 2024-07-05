@@ -19,19 +19,19 @@ export const ThemeToggle = () => {
 			<DetailsPopup>
 				<Form preventScrollReset replace action="/_actions/color-scheme" method="post" className="flex flex-col gap-px">
 					<input type="hidden" name="returnTo" value={location.pathname + location.search} />
-					<button value="light" name="colorScheme">
+					<button value="light" name="colorTheme">
 						<svg className="h-4 w-4">
 							<use href={`${iconsHref}#sun`} />
 						</svg>{' '}
 						Light
 					</button>
-					<button value="dark" name="colorScheme">
+					<button value="dark" name="colorTheme">
 						<svg className="h-4 w-4">
 							<use href={`${iconsHref}#moon`} />
 						</svg>{' '}
 						Dark
 					</button>
-					<button value="system" name="colorScheme">
+					<button value="system" name="colorTheme">
 						<svg className="h-4 w-4">
 							<use href={`${iconsHref}#monitor`} />
 						</svg>{' '}

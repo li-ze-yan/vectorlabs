@@ -6,7 +6,7 @@ export default {
 		optimizeUniversalDefaults: true,
 	},
 	content: ['./app/**/*.{js,jsx,ts,tsx,mjs,mdx,html}'],
-	darkMode: 'class',
+	darkMode: 'selector',
 	theme: {
 		screens: {
 			sm: '640px',

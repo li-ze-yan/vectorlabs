@@ -37,6 +37,7 @@
 		"stylelint",
 		"tailwindcss",
 		"typecheck",
+		"vals",
 		"vectorlabs",
 		"zustand"
 	]

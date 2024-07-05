@@ -15,6 +15,8 @@ const sharedRules = {
 	'@typescript-eslint/no-explicit-any': 'off',
 	'jsx-a11y/no-noninteractive-element-interactions': 'off',
 	'import/no-unresolved': 'off',
+	'react-hooks/exhaustive-deps': 'off',
+	'no-case-declarations': 'off',
 }
 
 /** @type {import('eslint').Linter.Config} */

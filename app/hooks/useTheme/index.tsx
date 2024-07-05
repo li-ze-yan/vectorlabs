@@ -1,11 +1,12 @@
 import { useNavigation, useRouteLoaderData } from '@remix-run/react'
-import { ColorScheme } from '~/lib/color-scheme.server'
+import { ColorTheme } from '~/lib/color-theme.server'
+import type { loader as rootLoader } from '~/root'
 
 export const useTheme = () => {
-	const rootLoaderData = useRouteLoaderData<any>('root')
-	const rootColorScheme = rootLoaderData?.colorScheme ?? 'system'
+	const rootLoaderData = useRouteLoaderData<typeof rootLoader>('root')
+	const rootColorTheme = rootLoaderData?.colorTheme ?? 'system'
 
 	const { formData } = useNavigation()
-	const optimisticColorScheme = formData?.has('colorScheme') ? (formData.get('colorScheme') as ColorScheme) : null
-	return optimisticColorScheme || rootColorScheme
+	const optimisticColorTheme = formData?.has('colorTheme') ? (formData.get('colorTheme') as ColorTheme) : null
+	return optimisticColorTheme || rootColorTheme
 }
