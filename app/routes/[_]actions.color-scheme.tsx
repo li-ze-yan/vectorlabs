@@ -5,7 +5,6 @@ import { safeRedirect } from '~/lib/http.server'
 export async function action({ request }: ActionFunctionArgs) {
 	const formData = await request.formData()
 	const colorTheme = formData.get('colorTheme')
-	console.log('colorTheme', colorTheme)
 	if (!validateColorTheme(colorTheme)) {
 		throw new Response('网站模式传递错误', { status: 400 })
 	}

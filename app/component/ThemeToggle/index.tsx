@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import { Variants, motion } from 'framer-motion'
 import { useState } from 'react'
 import { useTheme } from '~/hooks'
+import { ColorThemeButton } from './component'
 import iconsHref from '/img/common/icons.svg'
 
 export const ThemeToggle = () => {
@@ -65,40 +66,13 @@ export const ThemeToggle = () => {
 							<input type="hidden" name="returnTo" value={location.pathname + location.search} />
 						</motion.li>
 						<motion.li variants={itemVariants} className="flex justify-center">
-							<button
-								value="light"
-								name="colorTheme"
-								className={clsx('flex items-center flex-nowrap gap-4', colorTheme === 'light' ? 'text-[#0ea5e9]' : '')}
-							>
-								<svg className="h-4 w-4">
-									<use href={`${iconsHref}#sun`} />
-								</svg>
-								<span>白昼模式</span>
-							</button>
+							<ColorThemeButton colorTheme={colorTheme} value="light" label="白昼模式" iconHash="sun" />
 						</motion.li>
 						<motion.li variants={itemVariants} className="flex justify-center">
-							<button
-								value="dark"
-								name="colorTheme"
-								className={clsx('flex items-center flex-nowrap gap-4', colorTheme === 'dark' ? 'text-[#0ea5e9]' : '')}
-							>
-								<svg className="h-4 w-4">
-									<use href={`${iconsHref}#moon`} />
-								</svg>
-								<span>黑夜模式</span>
-							</button>
+							<ColorThemeButton colorTheme={colorTheme} value="dark" label="黑夜模式" iconHash="moon" />
 						</motion.li>
 						<motion.li variants={itemVariants} className="flex justify-center">
-							<button
-								value="system"
-								name="colorTheme"
-								className={clsx('flex items-center flex-nowrap gap-4', colorTheme === 'system' ? 'text-[#0ea5e9]' : '')}
-							>
-								<svg className="h-4 w-4">
-									<use href={`${iconsHref}#monitor`} />
-								</svg>
-								<span>系统模式</span>
-							</button>
+							<ColorThemeButton colorTheme={colorTheme} value="system" label="系统模式" iconHash="monitor" />
 						</motion.li>
 					</ul>
 				</motion.div>
