@@ -1,7 +1,7 @@
 import { Link } from '@remix-run/react'
 import clsx from 'clsx'
 import { Logo, ThemeToggle } from '~/component'
-import { Hero, NavItems } from './component'
+import { NavItems, RobotHero } from './component'
 import styles from './index.module.css'
 export const Header = () => {
 	return (
@@ -14,7 +14,7 @@ export const Header = () => {
 					)}
 				>
 					<div
-						className="absolute inset-0 bg-grid-slate-900/[0.04] bg-[bottom_1px_center] dark:bg-grid-slate-400/[0.05] dark:bg-bottom dark:border-b dark:border-slate-100/5"
+						className="absolute inset-0 bg-grid-slate-900/[0.04] dark:bg-grid-slate-400/[0.05] dark:bg-bottom dark:border-b dark:border-slate-100/5"
 						style={{
 							maskImage: 'linear-gradient(to bottom, transparent, black)',
 							WebkitMaskImage: 'linear-gradient(to bottom, transparent, black)',
@@ -64,42 +64,10 @@ export const Header = () => {
 						>
 							开始使用
 						</Link>
-						{/* <SearchButton className="hidden sm:flex items-center w-72 text-left space-x-3 px-4 h-12 bg-white ring-1 ring-slate-900/10 hover:ring-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 shadow-sm rounded-lg text-slate-400 dark:bg-slate-800 dark:ring-0 dark:text-slate-300 dark:highlight-white/5 dark:hover:bg-slate-700">
-              {({ actionKey }) => (
-                <>
-                  <svg
-                    width="24"
-                    height="24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="flex-none text-slate-300 dark:text-slate-400"
-                    aria-hidden="true"
-                  >
-                    <path d="m19 19-3.5-3.5" />
-                    <circle cx="11" cy="11" r="6" />
-                  </svg>
-                  <span className="flex-auto">Quick search...</span>
-                  {actionKey && (
-                    <kbd className="font-sans font-semibold dark:text-slate-500">
-                      <abbr
-                        title={actionKey[1]}
-                        className="no-underline text-slate-300 dark:text-slate-500"
-                      >
-                        {actionKey[0]}
-                      </abbr>{' '}
-                      K
-                    </kbd>
-                  )}
-                </>
-              )}
-            </SearchButton> */}
 					</div>
 				</div>
 			</div>
-			<Hero />
+			<RobotHero />
 		</header>
 	)
 }

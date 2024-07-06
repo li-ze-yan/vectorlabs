@@ -1,4 +1,4 @@
-import { Hero } from './Hero'
 import { NavItems } from './NavItems'
+import { RobotHero } from './RobotHero'
 
-export { Hero, NavItems }
+export { NavItems, RobotHero }
