@@ -1,7 +1,7 @@
 import { Link } from '@remix-run/react'
 import clsx from 'clsx'
 import { Logo, ThemeToggle } from '~/component'
-import { NavItems } from './component'
+import { Hero, NavItems } from './component'
 import styles from './index.module.css'
 export const Header = () => {
 	return (
@@ -98,29 +98,8 @@ export const Header = () => {
             </SearchButton> */}
 					</div>
 				</div>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
-				<p>1111111111111</p>
 			</div>
+			<Hero />
 		</header>
 	)
 }
