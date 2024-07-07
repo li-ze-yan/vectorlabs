@@ -5,23 +5,23 @@ import { ComputersCanvas, NavItems } from './component'
 import styles from './index.module.css'
 export const Header = () => {
 	return (
-		<header className="relative">
-			<div className="px-4 sm:px-6 md:px-8">
+		<header className="relative w-full h-[105vh] mx-auto">
+			<div
+				className={clsx(
+					'absolute inset-0 bottom-10 bg-bottom bg-no-repeat bg-slate-50 dark:bg-[#0B1120]',
+					styles.beams,
+				)}
+			>
 				<div
-					className={clsx(
-						'absolute inset-0 bottom-10 bg-bottom bg-no-repeat bg-slate-50 dark:bg-[#0B1120]',
-						styles.beams,
-					)}
-				>
-					<div
-						className="absolute inset-0 bg-grid-slate-900/[0.04] dark:bg-grid-slate-400/[0.05] dark:bg-bottom dark:border-b dark:border-slate-100/5"
-						style={{
-							maskImage: 'linear-gradient(to bottom, transparent, black)',
-							WebkitMaskImage: 'linear-gradient(to bottom, transparent, black)',
-						}}
-					/>
-				</div>
-				<div className="relative pt-6 lg:pt-8 flex items-center justify-between text-slate-700 font-semibold text-sm leading-6 dark:text-slate-200">
+					className="absolute inset-0 bg-grid-slate-900/[0.04] dark:bg-grid-slate-400/[0.05] dark:bg-bottom dark:border-b dark:border-slate-100/5"
+					style={{
+						maskImage: 'linear-gradient(to bottom, transparent, black)',
+						WebkitMaskImage: 'linear-gradient(to bottom, transparent, black)',
+					}}
+				/>
+			</div>
+			<div className="relative w-full">
+				<div className="absolute w-full px-4 sm:px-6 md:px-8 pt-6 lg:pt-8 flex items-center justify-between z-50 text-slate-700 font-semibold text-sm leading-6 dark:text-slate-200">
 					<Logo path="/img/common/large-vectorlabs.svg" className="w-auto h-8" />
 					<div className="flex items-center">
 						<div className="hidden md:flex items-center">
@@ -45,7 +45,8 @@ export const Header = () => {
 						</div>
 					</div>
 				</div>
-				<div className="relative max-w-5xl mx-auto pt-12 sm:pt-16 lg:pt-24">
+				{/* pt-12 sm:pt-16 lg:pt-24 */}
+				<div className="absolute w-full mx-auto top-28 sm:top-32 lg:top-24 px-4 sm:px-6 md:px-8">
 					<h1 className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-7xl tracking-widest text-center dark:text-white">
 						快速构建现代网站
 						<p className="mt-2"></p>
@@ -57,7 +58,7 @@ export const Header = () => {
 						<code className="font-mono font-medium text-sky-500 dark:text-sky-400">框架/语法/原理/工作</code>{' '}
 						等，你可以在网站查看你所需要的内容
 					</p>
-					<div className="mt-6 sm:mt-10 flex justify-center space-x-6 text-sm">
+					<div className="mt-3 sm:mt-6 flex justify-center space-x-6 text-sm">
 						<Link
 							to=""
 							className="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400"

@@ -7,7 +7,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
 	return (
-		<div className="mb-20 overflow-hidden sm:mb-32 md:mb-40">
+		<div>
 			<Header />
 		</div>
 	)

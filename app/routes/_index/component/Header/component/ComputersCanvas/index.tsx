@@ -13,8 +13,8 @@ const Computers = ({ isMobile }: { isMobile: boolean }) => {
 			<pointLight intensity={1} />
 			<primitive
 				object={computer.scene}
-				scale={isMobile ? 0.7 : 1.3}
-				position={isMobile ? [0, -3, -2.2] : [0, -2, -1.5]}
+				scale={isMobile ? 0.7 : 0.75}
+				position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
 				rotation={[-0.01, -0.2, -0.1]}
 			/>
 		</mesh>
@@ -37,21 +37,19 @@ export const ComputersCanvas = () => {
 	}, [])
 
 	return (
-		<div className="h-[48vh]">
-			<Canvas
-				frameloop="demand"
-				shadows
-				dpr={[1, 2]}
-				camera={{ position: [20, 3, 5], fov: 25 }}
-				gl={{ preserveDrawingBuffer: true }}
-			>
-				<Suspense fallback={<CanvasLoader />}>
-					<OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
-					<Computers isMobile={isMobile} />
-				</Suspense>
+		<Canvas
+			frameloop="demand"
+			shadows
+			dpr={[1, 2]}
+			camera={{ position: [20, 3, 5], fov: 25 }}
+			gl={{ preserveDrawingBuffer: true }}
+		>
+			<Suspense fallback={<CanvasLoader />}>
+				<OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
+				<Computers isMobile={isMobile} />
+			</Suspense>
 
-				<Preload all />
-			</Canvas>
-		</div>
+			<Preload all />
+		</Canvas>
 	)
 }
