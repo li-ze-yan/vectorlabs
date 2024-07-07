@@ -38,6 +38,7 @@ export const ComputersCanvas = () => {
 
 	return (
 		<Canvas
+			className="z-0"
 			frameloop="demand"
 			shadows
 			dpr={[1, 2]}

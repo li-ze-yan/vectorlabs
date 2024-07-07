@@ -1,17 +1,14 @@
 import { Link } from '@remix-run/react'
 import clsx from 'clsx'
+import { motion } from 'framer-motion'
 import { Logo, ThemeToggle } from '~/component'
 import { ComputersCanvas, NavItems } from './component'
 import styles from './index.module.css'
+
 export const Header = () => {
 	return (
-		<header className="relative w-full h-[105vh] mx-auto">
-			<div
-				className={clsx(
-					'absolute inset-0 bottom-10 bg-bottom bg-no-repeat bg-slate-50 dark:bg-[#0B1120]',
-					styles.beams,
-				)}
-			>
+		<header className="relative w-full h-[105vh] mx-auto z-0">
+			<div className={clsx('absolute inset-0 bg-bottom bg-no-repeat bg-slate-50 dark:bg-[#0B1120]', styles.beams)}>
 				<div
 					className="absolute inset-0 bg-grid-slate-900/[0.04] dark:bg-grid-slate-400/[0.05] dark:bg-bottom dark:border-b dark:border-slate-100/5"
 					style={{
@@ -69,6 +66,23 @@ export const Header = () => {
 				</div>
 			</div>
 			<ComputersCanvas />
+			<div className="absolute z-50 sm:bottom-10 bottom-20 w-full flex justify-center items-center">
+				<a href="#about">
+					<div className="w-[35px] h-[64px] rounded-3xl border-4 border-gray-400 dark:border-secondary flex justify-center items-start p-2">
+						<motion.div
+							animate={{
+								y: [0, 24, 0],
+							}}
+							transition={{
+								duration: 1.5,
+								repeat: Infinity,
+								repeatType: 'loop',
+							}}
+							className="w-3 h-3 rounded-full bg-gray-400 dark:bg-secondary mb-1"
+						/>
+					</div>
+				</a>
+			</div>
 		</header>
 	)
 }

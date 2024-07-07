@@ -43,6 +43,7 @@ export default {
 				code: {
 					highlight: 'rgb(125 211 252 / 0.1)',
 				},
+				secondary: '#aaa6c3',
 			},
 			fontFamily: {
 				sans: ['Inter var', ...defaultTheme.fontFamily.sans],
