@@ -17,6 +17,7 @@ const sharedRules = {
 	'import/no-unresolved': 'off',
 	'react-hooks/exhaustive-deps': 'off',
 	'no-case-declarations': 'off',
+	'react/no-unknown-property': 'off',
 }
 
 /** @type {import('eslint').Linter.Config} */

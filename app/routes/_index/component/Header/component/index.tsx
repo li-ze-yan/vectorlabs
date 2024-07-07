@@ -1,4 +1,4 @@
+import { ComputersCanvas } from './ComputersCanvas'
 import { NavItems } from './NavItems'
-import { RobotHero } from './RobotHero'
 
-export { NavItems, RobotHero }
+export { ComputersCanvas, NavItems }

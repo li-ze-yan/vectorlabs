@@ -1,7 +1,7 @@
 import { Link } from '@remix-run/react'
 import clsx from 'clsx'
 import { Logo, ThemeToggle } from '~/component'
-import { NavItems, RobotHero } from './component'
+import { ComputersCanvas, NavItems } from './component'
 import styles from './index.module.css'
 export const Header = () => {
 	return (
@@ -45,7 +45,7 @@ export const Header = () => {
 						</div>
 					</div>
 				</div>
-				<div className="relative max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32">
+				<div className="relative max-w-5xl mx-auto pt-12 sm:pt-16 lg:pt-24">
 					<h1 className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-7xl tracking-widest text-center dark:text-white">
 						快速构建现代网站
 						<p className="mt-2"></p>
@@ -67,7 +67,7 @@ export const Header = () => {
 					</div>
 				</div>
 			</div>
-			<RobotHero />
+			<ComputersCanvas />
 		</header>
 	)
 }

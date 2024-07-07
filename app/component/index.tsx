@@ -1,5 +1,6 @@
+import { CanvasLoader } from './CanvasLoader'
 import { Document } from './Document'
 import { Logo } from './Logo'
 import { ThemeToggle } from './ThemeToggle'
 
-export { Document, Logo, ThemeToggle }
+export { CanvasLoader, Document, Logo, ThemeToggle }
