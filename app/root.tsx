@@ -1,5 +1,6 @@
 import { json, LoaderFunctionArgs } from '@remix-run/node'
 import { Outlet, useLoaderData, useMatches } from '@remix-run/react'
+
 import { Document } from '~/component'
 import '~/css/tailwind.css'
 import { parseColorTheme } from '~/lib/color-theme.server'
@@ -36,6 +37,7 @@ export default function App() {
 		}
 		return false
 	})
+
 	return (
 		<Document noIndex={noIndex} forceDark={forceDark} isDev={process.env.NODE_ENV === 'development'}>
 			<Outlet />
