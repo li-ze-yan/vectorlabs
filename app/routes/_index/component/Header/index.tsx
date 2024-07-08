@@ -7,7 +7,7 @@ import styles from './index.module.css'
 
 export const Header = () => {
 	return (
-		<header className="relative w-full h-[105vh] mx-auto z-0">
+		<header className="relative w-full md:h-[107vh] h-[102vh] mx-auto z-0">
 			<div className={clsx('absolute inset-0 bg-bottom bg-no-repeat bg-slate-50 dark:bg-[#0B1120]', styles.beams)}>
 				<div
 					className="absolute inset-0 bg-grid-slate-900/[0.04] dark:bg-grid-slate-400/[0.05] dark:bg-bottom dark:border-b dark:border-slate-100/5"
