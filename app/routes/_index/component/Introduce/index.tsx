@@ -3,7 +3,7 @@ import { textVariant } from '~/utils/motion'
 
 export const Introduce = () => {
 	return (
-		<section className="text-center px-8 mt-8 sm:mt-12 md:mt-24 mb-40">
+		<section id="introduce" className="text-center px-8 mt-8 sm:mt-12 md:mt-24 mb-40">
 			<motion.h2
 				variants={textVariant()}
 				initial="hidden"
