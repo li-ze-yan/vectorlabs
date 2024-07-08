@@ -29,6 +29,7 @@
 		"pnpm-lock.yaml": true
 	},
 	"cSpell.words": [
+		"ahooks",
 		"clsx",
 		"commitlint",
 		"drei",

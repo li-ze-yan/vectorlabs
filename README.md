@@ -33,6 +33,12 @@ Please contribute using [GitHub Flow](https://docs.github.com/en/get-started/usi
 Technologies used in the project:
 
 - [vite](https://vitejs.dev/)
+- [clsx](https://github.com/lukeed/clsx)
+- [three](https://threejs.org/)
+- [maath](https://github.com/pmndrs/maath)
+- [lodash](https://lodash.com/)
+- [ahooks](https://ahooks.js.org/guide/)
+- [zustand](https://github.com/pmndrs/zustand)
 - [remix.run](https://remix.run/)
 - [typescript](https://www.typescriptlang.org/)
 - [tailwindcss](https://tailwindcss.com/)
@@ -44,6 +50,9 @@ Technologies used in the project:
 - [lint-staged](https://github.com/lint-staged/lint-staged)
 - [commitlint](https://commitlint.js.org/)
 - [commitizen](https://commitizen-tools.github.io/commitizen/)
+- [@react-three/drei](https://github.com/pmndrs/drei)
+- [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
+- [@studio-freight/lenis](https://github.com/darkroomengineering/lenis)
 
 <h2>🛡️ License:</h2>
 
