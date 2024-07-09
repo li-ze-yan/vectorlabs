@@ -67,7 +67,7 @@ export const Header = () => {
 			</div>
 			<ComputersCanvas />
 			<div className="absolute z-50 sm:bottom-10 bottom-20 w-full flex justify-center items-center">
-				<a href="#introduce">
+				<span>
 					<div className="w-[35px] h-[64px] rounded-3xl border-4 border-gray-400 dark:border-secondary flex justify-center items-start p-2">
 						<motion.div
 							animate={{
@@ -81,7 +81,7 @@ export const Header = () => {
 							className="w-3 h-3 rounded-full bg-gray-400 dark:bg-secondary mb-1"
 						/>
 					</div>
-				</a>
+				</span>
 			</div>
 		</header>
 	)
