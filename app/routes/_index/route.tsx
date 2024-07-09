@@ -2,6 +2,7 @@ import type { MetaFunction } from '@remix-run/node'
 import Lenis from '@studio-freight/lenis'
 import { useEffect } from 'react'
 import { Header, Introduce } from './component'
+import { Question } from './component/Question'
 
 export const meta: MetaFunction = () => {
 	return [{ title: 'Vectorlabs' }, { name: 'description', content: 'Welcome to Vectorlabs!' }]
@@ -26,6 +27,7 @@ export default function Index() {
 		<div>
 			<Header />
 			<Introduce />
+			<Question />
 		</div>
 	)
 }
