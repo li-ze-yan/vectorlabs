@@ -1,6 +1,7 @@
 import type { MetaFunction } from '@remix-run/node'
 import Lenis from '@studio-freight/lenis'
 import { useEffect } from 'react'
+import { StarsCanvas } from '~/component'
 import { Header, Introduce } from './component'
 import { Question } from './component/Question'
 
@@ -26,8 +27,11 @@ export default function Index() {
 	return (
 		<div>
 			<Header />
-			<Introduce />
-			<Question />
+			<div className="relative z-0">
+				<Introduce />
+				<Question />
+				<StarsCanvas />
+			</div>
 		</div>
 	)
 }
