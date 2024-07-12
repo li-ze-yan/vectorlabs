@@ -40,9 +40,9 @@ const Stars = (props: any) => {
 			case 'system':
 				const media = window.matchMedia('(prefers-color-scheme: dark)')
 				if (media.matches) {
-					setStarsColor('#ff0000')
-				} else {
 					setStarsColor('#f272c8')
+				} else {
+					setStarsColor('#ff0000')
 				}
 				break
 			default:

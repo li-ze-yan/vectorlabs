@@ -45,6 +45,9 @@ export default {
 				},
 				secondary: '#aaa6c3',
 			},
+			width: {
+				'custom-clamp': 'clamp(10rem, 50vw, 60rem)',
+			},
 			fontFamily: {
 				sans: ['Inter var', ...defaultTheme.fontFamily.sans],
 				mono: ['Fira Code VF', ...defaultTheme.fontFamily.mono],
