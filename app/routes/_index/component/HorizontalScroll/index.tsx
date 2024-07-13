@@ -12,7 +12,7 @@ export const HorizontalScroll = () => {
 	const { scrollYProgress } = useScroll({
 		target: targetRef,
 	})
-	const x = useTransform(scrollYProgress, [0, 1], ['0%', '-75%'])
+	const x = useTransform(scrollYProgress, [0, 1], ['0%', '-78%'])
 
 	return (
 		<div className="h-[500vh]" ref={targetRef}>

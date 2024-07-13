@@ -2,7 +2,7 @@ import type { MetaFunction } from '@remix-run/node'
 import Lenis from '@studio-freight/lenis'
 import { useEffect } from 'react'
 import { StarsCanvas } from '~/component'
-import { Header, HorizontalScroll, Introduce } from './component'
+import { Header, HorizontalScroll, Introduce, ZoomScroll } from './component'
 import { Question } from './component/Question'
 
 export const meta: MetaFunction = () => {
@@ -33,7 +33,7 @@ export default function Index() {
 				<StarsCanvas />
 			</div>
 			<HorizontalScroll />
-			<div className="w-full h-screen"></div>
+			<ZoomScroll />
 		</div>
 	)
 }
